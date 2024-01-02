@@ -1,34 +1,112 @@
+
 @font-face {
-    font-family: 'BalooBhaijaan2-Bold';
-    src: url('./fonts/BalooBhaijaan2-Bold.ttf') format('truetype');
-  }
-  
-  @font-face {
-    font-family: 'Commissioner-Bold';
-    src: url('./fonts/Commissioner-Bold.ttf') format('truetype');
-  }
-  
-  @font-face {
-    font-family: 'Barlow-Medium';
-    src: url('./fonts/Barlow-Medium.ttf') format('truetype');
-  }
-  
-  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-  }
-  
-  .record.texts {
-    text-align: center;
-    font-size: 24px;
-    color: #313131;
-  }
-  
-  .record.body {
-    background-color: white;
-    height: 90vh;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-  }
-  
+  font-family: 'BalooBhaijaan2-Bold';
+  src: url('./fonts/BalooBhaijaan2-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Commissioner-Bold';
+  src: url('./fonts/Commissioner-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Barlow-Medium';
+  src: url('./fonts/Barlow-Medium.ttf') format('truetype');
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.texts {
+  text-align: center;
+  font-size: 24px;
+  color: #313131;
+}
+
+.body {
+  background-color: white;
+  height: 90vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+
+/* Add styles for the body, header, and other common styles */
+body {
+font-family: 'Arial', sans-serif;
+margin: 0;
+padding: 0;
+}
+
+.header {
+background-color: #333;
+color: white;
+padding: 1rem;
+text-align: center;
+}
+
+/* Styles for the search bar */
+.search-bar {
+display: flex;
+align-items: center;
+margin-bottom: 1rem;
+}
+
+.search-input {
+margin-right: 1rem;
+}
+
+.search-input input {
+padding: 0.5rem;
+font-size: 1rem;
+}
+
+.add-user-btn {
+background-color: #007bff;
+color: white;
+padding: 0.5rem 1rem;
+border: none;
+cursor: pointer;
+font-size: 1rem;
+}
+
+.add-user-btn:hover {
+background-color: #0056b3;
+}
+
+/* Styles for the table */
+.table-container {
+overflow: hidden;
+border: 1px solid #ddd;
+}
+
+.fixed-header table {
+width: 100%;
+table-layout: fixed;
+border-collapse: collapse;
+}
+
+.fixed-header th {
+background-color: #333;
+color: white;
+padding: 0.5rem;
+}
+
+.scrollable-table {
+overflow-y: auto;
+max-height: 300px; /* Set a max height to enable scrolling */
+}
+
+.scrollable-table table {
+width: 100%;
+table-layout: fixed;
+border-collapse: collapse;
+}
+
+.scrollable-table td, .scrollable-table th {
+border: 1px solid #ddd;
+padding: 0.5rem;
+}
